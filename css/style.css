@@ -1,0 +1,54 @@
+@charset "utf-8";
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 20px 20px;
+  font-family: "Proxima Nova Rg", Arial, Helvetica, sans-serif;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+path {
+  stroke: #6b6b47;
+  stroke-opacity: 0.3;
+}
+
+svg {
+  position: absolute;
+}
+
+.dropdown {
+  margin-left: 980px;
+}
+
+.infolabel {
+  position: absolute;
+  width: 220px;
+  height: 50px;
+  color: #fff;
+  background-color: #0f1238;
+  border: solid thin #fff;
+  padding: 5px;
+}
+
+.infolabel h1 {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  line-height: 1em;
+}
+
+.infolabel b {
+  float: left;
+}
+
+.labelname {
+  display: inline-block;
+  float: right;
+  margin: -25px px -px 40px;
+  font-size: 1em;
+  font-weight: bold;
+  position: absolute;
+}
