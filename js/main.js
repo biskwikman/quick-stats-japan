@@ -16,11 +16,19 @@
     var height = 700;
     
     //create a new svg element with the above dimensions
-    var map = d3.select("body")
+    var svg = d3.select("body")
                 .append("svg")
                 .attr("width", width)
                 .attr("height", height);
-                
+    
+    var map = svg.append("g").call(d3.zoom()
+                    .scaleExtent([1/2, 4])
+                    .on("zoom", zoomed));
+    
+    function zoomed() {
+      map.attr("transform", d3.event.transform);
+    }
+    
     //create projection centered on Japan
     var projection = d3.geoMercator()
       .center([138.3, 39.2])
